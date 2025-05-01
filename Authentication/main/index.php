@@ -14,7 +14,7 @@
   <div class="container-fluid">
     <!-- Logo and Brand -->
     <a class="navbar-brand d-flex align-items-center text-white" href="#">
-      <img src="/Authentication/assets/nobg.png" alt="Logo" width="60" height="60" class="me-2">
+      <img src="../assets/nobg.png" alt="Logo" width="60" height="60" class="me-2">
       <strong>PEasy</strong>
     </a>
 
@@ -38,7 +38,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white d-flex align-items-center" href="/Authentication/signUp/signup.php">
+          <a class="nav-link text-white d-flex align-items-center" href="../register/create.php">
             <i class="bi bi-person-plus fs-5 me-1"></i> <span>Register</span>
           </a>
         </li>
@@ -60,25 +60,16 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active" data-bs-interval="10000">
-      <img src="/Authentication/assets/mainCarousel.png" class="d-block w-100" alt="..." width="780" height="450" style="max-height: 450px; object-fit: cover;"> 
-      <!-- <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
-      </div> -->
+      <img src="../assets/mainCarousel.png" class="d-block w-100" alt="..." width="780" height="450" style="max-height: 450px; object-fit: cover;"> 
+    
     </div>
     <div class="carousel-item" data-bs-interval="2000">
-      <img src="/Authentication/assets/carouselCase.png" class="d-block w-100" alt="..." width="780" height="450" style="max-height: 450px; object-fit: cover;">
-      <!-- <div class="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Some representative placeholder content for the second slide.</p>
-      </div> -->
+      <img src="../assets/carouselCase.png" class="d-block w-100" alt="..." width="780" height="450" style="max-height: 450px; object-fit: cover;">
+   
     </div>
     <div class="carousel-item">
-      <img src="/Authentication/assets/acerCAROUSEL.png" class="d-block w-100" alt="..." width="780" height="450" style="max-height: 450px; object-fit: cover;">
-      <!-- <div class="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Some representative placeholder content for the third slide.</p>
-      </div> -->
+      <img src="../assets/acerCAROUSEL.png" class="d-block w-100" alt="..." width="780" height="450" style="max-height: 450px; object-fit: cover;">
+     
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
@@ -94,139 +85,130 @@
 
 <div class="product-container">
     <div class="product-card">
-      <img src="/Authentication/assets/GIGABYTEP650G.png" alt="Product Image">
+      <img src="../assets/GIGABYTEP650G.png" alt="Product Image">
       <div class="product-info">
         <h3 class="product-title">Power Supply</h3>
         <p class="product-description">A Mid-ranged power supply with 80+ gold rated.</p>
         <p class="product-price">₱3,000</p>
-        <a href="#" class="product-button btn btn-success">Add to Cart</a>
+        <a href="../signIn/login.php" class="product-button btn btn-warning">Add to Cart</a>
       </div>
   </div>
     <div class="product-card">
-      <img src="/Authentication/assets/segotepW1.png" alt="Product Image">
+      <img src="../assets/segotepW1.png" alt="Product Image">
       <div class="product-info">
         <h3 class="product-title">Segotep W1 PC Case</h3>
         <p class="product-description">RGB Mid-tower with tempered glass side panel.</p>
         <p class="product-price">₱1,400</p>
-        <a href="#" class="product-button btn btn-success">Add to Cart</a>
+        <a href="#" class="product-button btn btn-warning">Add to Cart</a>
       </div>
     </div>
     <div class="product-card" style="padding-top: 20px;">
-      <img src="/Authentication/assets/samsungEVOSSD.png" alt="Product Image">
+      <img src="../assets/samsungEVOSSD.png" alt="Product Image">
       <div class="product-info">
         <h3 class="product-title">Samsung EVO 870 SSD</h3>
         <p class="product-description">M.2 SSD PCIE 4.0 512GB | 1TB Storage</p>
         <p class="product-price">₱2,800</p>
-        <a href="#" class="product-button btn btn-success">Add to Cart</a>
+        <a href="#" class="product-button btn btn-warning">Add to Cart</a>
       </div>
     </div>
     <div class="product-card">
-      <img src="/Authentication/assets/lexarRAM.png" alt="Product Image">
+      <img src="../assets/lexarRAM.png" alt="Product Image">
       <div class="product-info">
         <h3 class="product-title">Lexar RAM </h3>
         <p class="product-description">8 GB | 16 GB | Gaming RAM 1600 | 2400 | 3200 | 3600 mhz</p>
         <p class="product-price">₱899</p>
-        <a href="#" class="product-button btn btn-success">Add to Cart</a>
+        <a href="#" class="product-button btn btn-warning">Add to Cart</a>
       </div>
     </div>
     
   </div>
 <!-- New Arrivals Section -->
-<h2 style="margin: 20px; font-size: 24px;">NEW ARRIVALS</h2>
+<h2 style="margin: 20px; font-size: 24px;" class="text-center" >NEW ARRIVALS</h2>
 <div class="product-container">
   <div class="product-card">
-    <img src="/Authentication/assets/acerLaptop.png" alt="Product Image">
+    <img src="../assets/acerLaptop.png" alt="Product Image">
     <div class="product-info">
       <h3 class="product-title">Acer Aspire 7 A715-42G</h3>
       <p class="product-description">AMD Ryzen 7 5700U | NVIDIA GeForce RTX 3050 Ti</p>
       <p class="product-price">₱40,995.00</p>
-      <a href="#" class="product-button">Buy Now</a>
+      <a href="#" class="product-button btn btn-success">Buy Now</a>
     </div>
   </div>
   <div class="product-card">
-    <img src="/Authentication/assets/lenovoLAPTOP.png" alt="Product Image">
+    <img src="../assets/lenovoLAPTOP.png" alt="Product Image">
     <div class="product-info">
       <h3 class="product-title">Lenovo IdeaPad Slim 1 14ALC7</h3>
       <p class="product-description">AMD Ryzen 5 5500U | 16GB DDR4 RAM | Integrated AMD Radeon Graphics</p>
       <p class="product-price">₱33,499.00</p>
-      <a href="#" class="product-button">Buy Now</a>
+      <a href="#" class="product-button btn btn-success">Buy Now</a>
     </div>
   </div>
   <div class="product-card">
-    <img src="https://via.placeholder.com/250x180" alt="Product Image">
-    <div class="product-info">
-      <h3 class="product-title">Lenovo V14 G4 ABP</h3>
-      <p class="product-description">14" FHD | Ryzen 5 | 8GB DDR4 | 256GB SSD</p>
-      <p class="product-price">₱29,995.00</p>
-      <a href="#" class="product-button">Buy Now</a>
+    <img src="../assets/hpLAPTOP.png" alt="Product Image" >
+    <div class="product-info" >
+      <h3 class="product-title">HP Pavilion Laptop 14-dv2097nr</h3>
+      <p class="product-description">14 | Windows 11 Home | Intel®  Core™ i5 | 16GB RAM | 256GB SSD | FHD</p>
+      <p class="product-price">₱38,699.00</p>
+      <a href="#" class="product-button btn btn-success">Buy Now</a>
     </div>
   </div>
   <div class="product-card">
-    <img src="https://via.placeholder.com/250x180" alt="Product Image">
+    <img src="../assets/asusLAPTOP.png" alt="Product Image">
     <div class="product-info">
-      <h3 class="product-title">LenG4 ABP</h3>
-      <p class="product-description">14" FHD | Ryzen 5 | 8GB DDR4 | 256GB SSD</p>
-      <p class="product-price">₱29,995.00</p>
-      <a href="#" class="product-button">Buy Now</a>
+      <h3 class="product-title">Asus 16" Vivobook Wuxga Laptop</h3>
+      <p class="product-description">Intel I7-1255U 16gb/512gb Win11 Black</p>
+      <p class="product-price">₱38,995.00</p>
+      <a href="#" class="product-button btn btn-success">Buy Now</a>
     </div>
   </div>
   <!-- You can add more New Arrival cards here -->
 </div>
 
 <!-- Top Sellers Section -->
-<h2 style="margin: 20px; font-size: 24px;">TOP SELLERS</h2>
+<h2 style="margin: 20px; font-size: 24px;" class="text-center">TOP SELLERS</h2>
 <div class="product-container">
   <div class="product-card">
-    <img src="https://via.placeholder.com/250x180" alt="Product Image">
+    <img src="../assets/ak400.png" alt="Product Image">
     <div class="product-info">
-      <h3 class="product-title">Coolermaster MWE850 V2</h3>
-      <p class="product-description">Fully Modular 80+ Gold Power Supply</p>
-      <p class="product-price">₱7,500.00</p>
-      <a href="#" class="product-button">Buy Now</a>
+      <h3 class="product-title">AK400 Digital CPU Cooler</h3>
+      <p class="product-description">69k high fans</p>
+      <p class="product-price">₱1,699.00</p>
+      <a href="#" class="product-button btn btn-success">Buy Now</a>
     </div>
   </div>
   <div class="product-card">
-    <img src="https://via.placeholder.com/250x180" alt="Product Image">
+    <img src="../assets/ryzen7.png" alt="Product Image">
     <div class="product-info">
-      <h3 class="product-title">Coolermaster MWE850 V2</h3>
-      <p class="product-description">Fully Modular 80+ Gold Power Supply</p>
-      <p class="product-price">₱7,500.00</p>
-      <a href="#" class="product-button">Buy Now</a>
+      <h3 class="product-title">Ryzen 7 5700x</h3>
+      <p class="product-description">6 Cores 12 Threads</p>
+      <p class="product-price">₱8,500.00</p>
+      <a href="#" class="product-button btn btn-success">Buy Now</a>
     </div>
   </div>
   <div class="product-card">
-    <img src="https://via.placeholder.com/250x180" alt="Product Image">
+    <img src="../assets/rx6600.png" alt="Product Image">
     <div class="product-info">
-      <h3 class="product-title">Coolermaster MWE850 V2</h3>
-      <p class="product-description">Fully Modular 80+ Gold Power Supply</p>
-      <p class="product-price">₱7,500.00</p>
-      <a href="#" class="product-button">Buy Now</a>
+      <h3 class="product-title">Gigabyte RX 6600 </h3>
+      <p class="product-description">8GB GDDR6 128-bit Graphics</p>
+      <p class="product-price">₱13,000.00</p>
+      <a href="#" class="product-button btn btn-success">Buy Now</a>
     </div>
   </div>
   <div class="product-card">
-    <img src="https://via.placeholder.com/250x180" alt="Product Image">
+    <img src="../assets/lexarNVME.png" alt="Product Image">
     <div class="product-info">
-      <h3 class="product-title">Coolermaster MWE850 V2</h3>
-      <p class="product-description">Fully Modular 80+ Gold Power Supply</p>
-      <p class="product-price">₱7,500.00</p>
-      <a href="#" class="product-button">Buy Now</a>
-    </div>
-  </div>
-  <div class="product-card">
-    <img src="https://via.placeholder.com/250x180" alt="Product Image">
-    <div class="product-info">
-      <h3 class="product-title">Coolermaster MWE850 V2</h3>
-      <p class="product-description">Fully Modular 80+ Gold Power Supply</p>
-      <p class="product-price">₱7,500.00</p>
-      <a href="#" class="product-button">Buy Now</a>
+      <h3 class="product-title">LEXAR NVME SSD 1TB</h3>
+      <p class="product-description">NM710 1TB PCIe Gen4x4 NVMe M.2 SSD</p>
+      <p class="product-price">₱3,100.00</p>
+      <a href="#" class="product-button btn btn-success">Buy Now</a>
     </div>
   </div>
   <!-- Add more Top Seller cards here -->
 </div>
 
-  <div class="footer">
-    <h2>Copyright</h2>
-    <h4>All Rights Reserved</h4>
+  <div class="footer text-end text-light bg-secondary">
+    <p class="fs-6">@Copyright</p>
+    <p class="fs-6">All Rights Reserved 2025</p>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

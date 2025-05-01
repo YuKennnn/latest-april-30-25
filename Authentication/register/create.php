@@ -13,7 +13,7 @@ $db_host = "127.0.0.1";
 $db_username = "root";
 $db_password = "";
 $db_name = "peasy";
-$db_port = 3307;
+$db_port = 3306;
 
 try {
     mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
