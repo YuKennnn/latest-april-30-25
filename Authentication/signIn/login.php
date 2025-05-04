@@ -14,7 +14,7 @@ $db_host = "127.0.0.1";
 $db_username = "root";
 $db_password = "";
 $db_name = "peasy";
-$db_port = 3306;
+$db_port = 3307;
 
 try {
     mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
@@ -120,7 +120,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       <input type="submit" id="butt" class="btn btn-success" value="Login">
 
       <div class="register">
-        <p>Already have an account? <a href="/Authentication/create.php">Create a new one</a></p>
+        <p>Already have an account? <a href="/Authentication/register/create.php">Create a new one</a></p>
       </div>
     </form>
   </div>

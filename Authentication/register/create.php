@@ -13,7 +13,7 @@ $db_host = "127.0.0.1";
 $db_username = "root";
 $db_password = "";
 $db_name = "peasy";
-$db_port = 3306;
+$db_port = 3307;
 
 try {
     mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
@@ -76,7 +76,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet" />
-	<link rel="stylesheet" href="/Authentication/create.css" />
+	<link rel="stylesheet" href="/Authentication/register/create.css" />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 	<title>Peasy Builder | Create an Account</title>
 	
@@ -87,11 +87,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 		<input type="checkbox" id="chk" aria-hidden="true">
 
 		<div class="signup">
-			<a class="mb-5" href="/Authentication/login.php">
+			<a class="mb-5" href="/Authentication/signIn/login.php">
 				<i class="bi bi-arrow-left-circle"></i>
 			</a>
 
-			<form action="" method="POST">
+			<form action="/Authentication/main/index.php" method="POST">
 				<label for="chk" aria-hidden="true">Sign up</label>
 
 				<input type="text" name="firstname" placeholder="First Name" required />
