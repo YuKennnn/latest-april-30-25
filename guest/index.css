@@ -11,8 +11,6 @@
     padding-top: 0;
     padding-bottom: 0;
   }
-
-
   
 .navbar-brand img {
     width: 120px;
@@ -28,29 +26,6 @@ nav.navbar{
     background-color: rgb(5, 165, 90) !important;
     display: flex;
     justify-content: center;
-}
-
-.marquee {
-  width: 100%;
-  overflow: hidden;
-  white-space: nowrap;
-  background-color: rgb(25, 135, 84);
-  color: whitesmoke;
-  padding: 10px 0;
-}
-
-.marquee-text {
-  display: inline-block;
-  animation: scroll 10s linear infinite;
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
 }
 
 body {

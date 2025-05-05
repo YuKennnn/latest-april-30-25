@@ -33,12 +33,12 @@
           <a class="nav-link text-white" href="#"><i class="bi bi-chat-left fs-4"></i></a>
         </li>
         <li class="nav-item mx-2">
-          <a class="nav-link text-white d-flex align-items-center" href="/Authentication/signIn/login.php">
+          <a class="nav-link text-white d-flex align-items-center" href="../Authentication/signIn/login.php">
             <i class="bi bi-person-circle fs-5 me-1"></i> <span>Login</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white d-flex align-items-center" href="../register/create.php">
+          <a class="nav-link text-white d-flex align-items-center" href="../Authentication/register/create.php">
             <i class="bi bi-person-plus fs-5 me-1"></i> <span>Register</span>
           </a>
         </li>
@@ -47,23 +47,25 @@
   </div>
 </nav>
 
-<ul class="nav align-items-center justify-content-center nav-pills my-4" id="pills-tab pills-success" role="tablist">
-  <li class="nav-item nav-pills">
-    <a class="nav-link active bg-success text-white" aria-current="page" href="../main/index.php">Home</a>
+<!--navigation ni boss-->
+<ul class="nav fs-5 justify-content-center mt-2">
+  <li class="nav-item nav-pills ">
+    <a class="nav-link active bg-success" aria-current="page" href="#">Home</a>
   </li>
   <li class="nav-item">
     <a class="nav-link text-dark" href="#">Build A PC</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link text-dark" href="#">Computers</a>
-  </li>
-  <li class="nav-item">
     <a class="nav-link text-dark" href="#">Laptops</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link text-dark" href="#">Price List</a>
+    <a class="nav-link text-dark" href="#">Computers</a>
+  </li>
   <li class="nav-item">
-    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+    <a class="nav-link text-dark" href="#">Price List</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled text-dark" aria-disabled="true">Disabled</a>
   </li>
 </ul>
 
@@ -88,7 +90,7 @@
    
     </div>
     <div class="carousel-item">
-      <img src="../assets/RTX.png" class="d-block w-100" alt="..." width="780" height="450" style="max-height: 450px; object-fit: cover;">
+      <img src="../assets/acerCAROUSEL.png" class="d-block w-100" alt="..." width="780" height="450" style="max-height: 450px; object-fit: cover;">
      
     </div>
   </div>
@@ -102,11 +104,6 @@
   </button>
 </div>
 </div>
-
-<div class="marquee">
-    <div class="marquee-text">Check out our latest discounts and offers! New products are added weekly. Don't miss out on amazing deals! Build Your Dream! Shop now!</div>
-  </div>
-
 
 <div class="product-container">
     <div class="product-card">
@@ -124,7 +121,7 @@
         <h3 class="product-title">Segotep W1 PC Case</h3>
         <p class="product-description">RGB Mid-tower with tempered glass side panel.</p>
         <p class="product-price">₱1,400</p>
-        <a href="#" class="product-button btn btn-warning bi bi-cart"> Add to Cart</a>
+        <a href="#" class="product-button btn btn-warning">Add to Cart</a>
       </div>
     </div>
     <div class="product-card" style="padding-top: 20px;">
@@ -231,51 +228,10 @@
   <!-- Add more Top Seller cards here -->
 </div>
 
-<!--footer ni sha boss-->
-<footer class="bg-dark text-white pt-4 pb-3 mt-5">
-  <div class="container text-center text-md-start">
-    <div class="row">
-      <!-- About -->
-      <div class="col-md-3 mb-4">
-        <h5 class="text-uppercase">YourBrand</h5>
-        <p>
-          Quality tech products at great prices. Trusted by hundreds of customers nationwide.
-        </p>
-      </div>
-
-      <!-- Links -->
-      <div class="col-md-3 mb-4">
-        <h5 class="text-uppercase">Links</h5>
-        <ul class="list-unstyled">
-          <li><a href="#" class="text-white text-decoration-none">Home</a></li>
-          <li><a href="#" class="text-white text-decoration-none">Shop</a></li>
-          <li><a href="#" class="text-white text-decoration-none">About</a></li>
-          <li><a href="#" class="text-white text-decoration-none">Contact</a></li>
-        </ul>
-      </div>
-
-      <!-- Contact -->
-      <div class="col-md-3 mb-4">
-        <h5 class="text-uppercase">Contact</h5>
-        <p>Email: support@example.com</p>
-        <p>Phone: +63 900 000 0000</p>
-      </div>
-
-      <!-- Social -->
-      <div class="col-md-3 mb-4">
-        <h5 class="text-uppercase">Follow Us</h5>
-        <a href="https://www.facebook.com/" class="text-white me-2"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="text-white me-2"><i class="bi bi-twitter"></i></a>
-        <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
-      </div>
-    </div>
-
-    <!-- Copyright -->
-    <div class="text-center mt-3 border-top pt-3">
-      <small>© 2025 YourBrand. All rights reserved.</small>
-    </div>
+  <div class="footer text-end text-light bg-secondary">
+    <p class="fs-6">@Copyright</p>
+    <p class="fs-6">All Rights Reserved 2025</p>
   </div>
-</footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 

@@ -1,47 +1,40 @@
 <?php
-session_start(); // Start session
+session_start();
+require_once '../../database/database.php'; // Use correct relative path
 
-// Message for login result
 $message = '';
 if (isset($_SESSION['login_message'])) {
     $message = $_SESSION['login_message'];
     unset($_SESSION['login_message']);
 }
 
+$conn = getDBConnection(); 
 
-// Database connection
-$db_host = "127.0.0.1";
-$db_username = "root";
-$db_password = "";
-$db_name = "peasy";
-$db_port = 3307;
 
-try {
-    mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
-    $conn = new mysqli($db_host, $db_username, $db_password, $db_name, $db_port);
-} catch (Exception $e) {
-    die("Connection failed: " . $e->getMessage());
-}
-
-// Login check
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = $_POST['email'];
     $password = $_POST['password'];
 
     try {
-        $stmt = $conn->prepare("SELECT id, email, password FROM users WHERE email = ? AND password = ?");
+        
+        $stmt = $conn->prepare("SELECT id, f_name, l_name, username, email, password FROM users WHERE email = ? AND password = ?");
         $stmt->bind_param("ss", $email, $password);
         $stmt->execute();
-        $stmt->store_result();
+        $result = $stmt->get_result(); // 
+        $user = $result->fetch_assoc();
 
-        if ($stmt->num_rows === 1) {
-            // Success — matched
+        if ($user) {
+            
             $_SESSION['user_logged_in'] = true;
-            header("Location: index.php");
+            $_SESSION['user_firstname'] = $user['f_name']; 
+            $_SESSION['user_lastname'] = $user['l_name']; 
+            $_SESSION['user_username'] = $user['username']; 
+            $_SESSION['user_email'] = $user['email']; 
+
+            header("Location: ../../main/profile.php");
             exit();
         } else {
-            // Fail — no match
-            $_SESSION['login_message'] = "<div class='popup-message error'>Invalid email or password.</div>";
+          $_SESSION['login_message'] = "Invalid email or password.";
             header("Location: login.php");
             exit();
         }
@@ -52,6 +45,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 ?>
+
 
 
 
@@ -76,11 +70,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <body>
 
-  <?php if (!empty($message)): ?>
-  <div class="popup-container">
-    <?= $message ?>
+<?php if (!empty($message)): ?>
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="liveToast" class="toast align-items-center text-bg-danger border-0" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body">
+          <?= htmlspecialchars($message) ?>
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+    </div>
   </div>
-  <?php endif; ?>
+<?php endif; ?>
+
 <div class="navbar"></div>
 
   <div class="container">
@@ -120,7 +122,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       <input type="submit" id="butt" class="btn btn-success" value="Login">
 
       <div class="register">
-        <p>Already have an account? <a href="/Authentication/register/create.php">Create a new one</a></p>
+        <p>Already have an account? <a href="../register/create.php">Create a new one</a></p>
       </div>
     </form>
   </div>
@@ -129,3 +131,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </body>
 
 </html>
+
+<script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    var toastEl = document.getElementById('liveToast');
+    if (toastEl) {
+      var toast = new bootstrap.Toast(toastEl);
+      toast.show();
+    }
+  });
+</script>
